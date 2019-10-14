@@ -1,3 +1,2 @@
 #!/bin/bash
-# This is a comment
-echo "38439089"
+curl https://api.github.com/users/tilaxall | jq '.id'
