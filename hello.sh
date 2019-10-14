@@ -1,1 +1,1 @@
-Hello Tilaxall!
+echo "Hello Tilaxall!"
