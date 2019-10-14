@@ -1,0 +1,4 @@
+curl https://raw.githubusercontent.com/kigiri/superhero-api/master/api/all.json | jq ' .[] | select ( .id == 75)'#!/bin/bash
+# This is a comment
+pwd
+whoami
