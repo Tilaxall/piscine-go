@@ -1,1 +1,2 @@
-Hello Tilaxall!
+username = Tilxall
+echo "Hello "$username!
