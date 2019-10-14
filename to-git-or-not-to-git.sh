@@ -1,3 +1,3 @@
 #!/bin/bash
 # This is a comment
-print "38439089"
+echo "38439089"
