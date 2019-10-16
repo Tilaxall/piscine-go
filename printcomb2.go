@@ -21,7 +21,15 @@ func PrintComb2() {
 					z01.PrintRune(k)
 					z01.PrintRune(44)
 					z01.PrintRune(32)
-
+					if k == '9' {
+						k = '0'
+					}
+					if h == '9' {
+						h = '0'
+					}
+					if j == '9' {
+						j = '0'
+					}
 				}
 			}
 		}
