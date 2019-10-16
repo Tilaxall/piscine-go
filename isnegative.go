@@ -1,9 +1,6 @@
-package main
+package IsNegative
 
 import "github.com/01-edu/z01"
-
-func main() {
-}
 
 func IsNegative(nb int) {
 	if nb >= 0 {
