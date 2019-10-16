@@ -1,8 +1,8 @@
-package main
+package PrintComb
 
 import "github.com/01-edu/z01"
 
-func main() {
+func PrintComb() {
 
 	//var a rune = 48
 	//var b rune = 49
