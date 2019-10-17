@@ -12,5 +12,5 @@ func PrintStr(str string) string {
 		strTempreverse[i] = strTemp[number]
 		number--
 	}
-	return string(strTempreverse)
+	return strTempreverse
 }
