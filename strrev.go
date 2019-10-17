@@ -6,7 +6,6 @@ func PrintStr(str string) string {
 	var number int
 	for i := range strTemp {
 		number = i
-
 	}
 	for i := range strTemp {
 		strTempreverse[i] = strTemp[number]
