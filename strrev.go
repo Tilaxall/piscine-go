@@ -1,8 +1,8 @@
 package piscine
 
 func PrintStr(s string) string {
-	strTemp := []rune(str)
-	strTempreverse := []rune(str)
+	strTemp := []rune(s)
+	strTempreverse := []rune(s)
 	var number int
 	for i := range strTemp {
 		number = i
