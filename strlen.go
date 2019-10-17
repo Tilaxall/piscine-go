@@ -6,5 +6,5 @@ func StrLen(str string) int {
 	for i := range strTemp {
 		number = i
 	}
-	return int(number)
+	return int(number + 1)
 }
