@@ -1,6 +1,6 @@
 package piscine
 
-func PrintStr(s string) string {
+func StrRev(s string) string {
 	strTemp := []rune(s)
 	strTempreverse := []rune(s)
 	var number int
