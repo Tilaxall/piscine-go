@@ -1,4 +1,4 @@
-package PrintStr
+package printstr
 
 import (
 	"github.com/01-edu/z01"
