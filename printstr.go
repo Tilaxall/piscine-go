@@ -1,4 +1,4 @@
-package piscine
+package PrintStr
 
 import (
 	"github.com/01-edu/z01"
