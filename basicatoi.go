@@ -9,4 +9,5 @@ func BasicAtoi(s string) int {
 		}
 		result = result*10 + a
 	}
+	return result
 }
