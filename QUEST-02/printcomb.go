@@ -4,10 +4,6 @@ import "github.com/01-edu/z01"
 
 func PrintComb() {
 
-	//var a rune = 48
-	//var b rune = 49
-	//var c rune = 57
-
 	for i := '0'; i <= '9'; i++ {
 		for j := i + 1; j <= '9'; j++ {
 			for h := j + 1; h <= '9'; h++ {
