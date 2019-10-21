@@ -10,6 +10,9 @@ func Atoi(s string) int {
 	}
 	for _, value := range s {
 		a := 0
+		if value == ' ' {
+			return 0
+		}
 		for i := '1'; i <= value; i++ {
 			a++
 		}
