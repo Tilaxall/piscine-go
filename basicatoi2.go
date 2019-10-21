@@ -1,6 +1,6 @@
 package piscine
 
-func Atoi(s string) int {
+func BasicAtoi2(s string) int {
 	result := 0
 	/*if s[0] == '-' && s[1] == '-' || s[0] == '+' && s[1] == '+' {
 		return 0
