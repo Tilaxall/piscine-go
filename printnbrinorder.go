@@ -27,7 +27,7 @@ func sortMass(ResultMass []int) {
 	}
 	for i := 0; i < index-1; i++ {
 		for j := 0; j < index-i-1; j++ {
-			if ResultMass[j] < ResultMass[j+1] {
+			if ResultMass[j] > ResultMass[j+1] {
 				temp = ResultMass[j]
 				ResultMass[j] = ResultMass[j+1]
 				ResultMass[j+1] = temp
