@@ -7,10 +7,17 @@ import (
 )
 
 func main() {
-	for _, str := range os.Args {
+	for index, str := range os.Args {
 		for _, tempStr := range str {
+			if index == 0 {
+				break
+			}
 			z01.PrintRune(tempStr)
 		}
-		z01.PrintRune(10)
+		if index == 0 {
+		} else {
+			z01.PrintRune(10)
+		}
+
 	}
 }
