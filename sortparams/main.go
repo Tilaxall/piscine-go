@@ -13,13 +13,10 @@ func main() {
 		lenIndex = index
 	}
 
-	for i := 0; i < lenIndex-1; i++ {
-		for j := 0; j < lenIndex-i-1; j++ {
-			if argument[j] < argument[j+1] {
-				// меняем элементы местами
-				temp := argument[j]
-				argument[j] = argument[j+1]
-				argument[j+1] = temp
+	for i := 1; i <= lenIndex; i++ {
+		for j := i + 1; j <= lenIndex; j++ {
+			if argument[i] > argument[j] {
+				argument[i], argument[j] = argument[j], argument[i]
 			}
 		}
 	}
@@ -28,7 +25,7 @@ func main() {
 		for _, key := range os.Args[i] {
 			z01.PrintRune(key)
 		}
-		z01.PrintRune(' ')
+		z01.PrintRune(10)
 	}
 
 }
