@@ -8,6 +8,7 @@ func Join(strs []string, sep string) string {
 		key = key
 		massIndex = index
 	}
+	massIndex++
 
 	for _, key := range strs {
 		resultStr = resultStr + key
