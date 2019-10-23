@@ -4,7 +4,7 @@ func IsPrintable(str string) bool {
 	strbool := true
 	strRune := []rune(str)
 	for _, key := range strRune {
-		if key == 92 {
+		if key >= 0 && key <= 31 {
 			strbool = false
 		}
 	}
