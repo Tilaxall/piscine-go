@@ -1,20 +1,18 @@
-package main
-
-import (
-	"github.com/01-edu/z01"
-)
-
-func main() {
-	z01.PrintRune(NRune("Hello!", 3))
-	z01.PrintRune(NRune("Salut!", 2))
-	z01.PrintRune(NRune("Ola!", 4))
-	z01.PrintRune('\n')
-}
+package piscine
 
 func NRune(s string, n int) rune {
 	//runeStr := []rune(s)
-	//var number int
+	var number = 0
 	byteStr := []rune(s)
+	for _, key := range s {
+		key = key
+		number++
+	}
+	if number < n {
+		return '\x00'
+	} else if n <= 0 {
+		return '\x00'
+	}
 	return byteStr[n-1]
 	//return runeStr(-3:s[len(s)])
 	/*for i := range runeStr {
