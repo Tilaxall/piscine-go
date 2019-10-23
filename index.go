@@ -1,9 +1,26 @@
 package piscine
 
 func Index(s string, toFind string) int {
-	findStr := []rune(toFind)
+	sLen := StrLen(s)
+	findLen := StrLen(toFind)
+
+	var tempString string
+	for i := 0; i < sLen-findLen; i++ {
+		for j := 0; j < findLen; j++ {
+			tempString = tempString + string(s[i+j])
+		}
+		if tempString == toFind {
+			return i
+		}
+		tempString = ""
+	}
+	//fmt.Println(tempString)
+	return -1
+
+	/*findStr := []rune(toFind)
 	indexStr := []rune(s)
 	index := -1
+	tempIndex := 0
 	for findIndex, findKey := range findStr {
 		for strIndex, key := range indexStr {
 			if findKey == key && index == -1 && findIndex == 0 {
@@ -14,16 +31,16 @@ func Index(s string, toFind string) int {
 				index = strIndex
 				break
 
-			}
-			if findIndex != 0 && index != -1 && findKey != key && strIndex > index {
+			}*/
+
+	/*if findIndex != 0 && index != -1 && findKey != key && strIndex > index+1 {
 				index = -1
 			}
-			if findIndex != 0 && index != -1 && findKey == key {
+			if findIndex != 0 && index != -1 && findKey == key && strIndex > index {
 				break
 			}
-
 		}
-	}
+	}*/
 
 	/*
 		findIndex := 0
@@ -53,5 +70,14 @@ func Index(s string, toFind string) int {
 		}
 	}*/
 
-	return index
+	//return index
+}
+
+func StrLen(str string) int {
+	strTemp := []rune(str)
+	var number int
+	for i := range strTemp {
+		number = i
+	}
+	return int(number + 1)
 }
