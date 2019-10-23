@@ -6,6 +6,9 @@ func Index(s string, toFind string) int {
 	index := -1
 	for findIndex, findKey := range findStr {
 		for strIndex, key := range indexStr {
+			if findIndex != 0 && index != -1 && findKey != key && strIndex > index {
+				index = -1
+			}
 			if findIndex != 0 && index != -1 && findKey == key {
 				break
 			}
