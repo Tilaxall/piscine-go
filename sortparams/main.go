@@ -21,7 +21,7 @@ func main() {
 		}
 	}
 
-	for i := 1; i >= lenIndex; i++ {
+	for i := 1; i <= lenIndex; i++ {
 		for _, key := range os.Args[i] {
 			z01.PrintRune(key)
 		}
