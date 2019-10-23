@@ -9,7 +9,7 @@ func Index(s string, toFind string) int {
 			if findIndex != 0 && index != -1 && findKey == key {
 				break
 			}
-			if findKey == key && index == -1 {
+			if findKey == key && index == -1 && findIndex == 0 {
 				//fmt.Println(findIndex)
 				//fmt.Println(findKey)
 				//fmt.Println(strIndex)
