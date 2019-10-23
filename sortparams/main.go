@@ -28,7 +28,7 @@ func main() {
 		for _, key := range os.Args[i] {
 			z01.PrintRune(key)
 		}
-		z01.PrintRune(10)
+		z01.PrintRune(' ')
 	}
 
 }
