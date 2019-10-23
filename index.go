@@ -3,7 +3,9 @@ package piscine
 func Index(s string, toFind string) int {
 	sLen := StrLen(s)
 	findLen := StrLen(toFind)
-
+	if toFind == "" {
+		return 0
+	}
 	var tempString string
 	for i := 0; i < sLen-findLen; i++ {
 		for j := 0; j < findLen; j++ {
