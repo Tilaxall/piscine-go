@@ -6,12 +6,6 @@ func Index(s string, toFind string) int {
 	index := -1
 	for findIndex, findKey := range findStr {
 		for strIndex, key := range indexStr {
-			if findIndex != 0 && index != -1 && findKey != key && strIndex > index {
-				index = -1
-			}
-			if findIndex != 0 && index != -1 && findKey == key {
-				break
-			}
 			if findKey == key && index == -1 && findIndex == 0 {
 				//fmt.Println(findIndex)
 				//fmt.Println(findKey)
@@ -21,6 +15,13 @@ func Index(s string, toFind string) int {
 				break
 
 			}
+			if findIndex != 0 && index != -1 && findKey != key && strIndex > index {
+				index = -1
+			}
+			if findIndex != 0 && index != -1 && findKey == key {
+				break
+			}
+
 		}
 	}
 
