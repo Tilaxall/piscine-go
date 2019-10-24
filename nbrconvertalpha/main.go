@@ -13,7 +13,7 @@ func main() {
 	//argument := os.Args
 	for index, key := range os.Args {
 		lenIndex = index
-		if key == "---upper" {
+		if key == "--upper" {
 			letterBool = true
 		}
 	}
@@ -22,9 +22,11 @@ func main() {
 	}
 	for i := 1; i <= lenIndex; i++ {
 		for _, key := range os.Args[i] {
-			z01.PrintRune(key + rune(letterIndex))
+			if key != "--upper" {
+				z01.PrintRune(rune(key + letterIndex))
+			}
 		}
-		z01.PrintRune(10)
+		z01.PrintRune(' ')
 	}
 
 }
