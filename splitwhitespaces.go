@@ -1,4 +1,13 @@
-package piscine
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	str := "Hello how are you?"
+	fmt.Println(SplitWhiteSpaces(str))
+}
 
 // SplitWhiteSpaces function separates the words of a string
 // and puts them in a string array.
