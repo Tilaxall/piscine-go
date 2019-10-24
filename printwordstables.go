@@ -1,18 +1,7 @@
-package main
+package piscine
 
-import (
-	"github.com/01-edu/z01"
-)
+import "github.com/01-edu/z01"
 
-func main() {
-	str := "Hello how are you?"
-	table := SplitWhiteSpaces(str)
-	PrintWordsTables(table)
-}
-
-// SplitWhiteSpaces function separates the words of a string
-// and puts them in a string array.
-// The separators are spaces, tabs and newlines.
 func SplitWhiteSpaces(str string) []string {
 	size := 1
 	var result []string
