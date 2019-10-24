@@ -1,5 +1,8 @@
 package piscine
 
+// SplitWhiteSpaces function separates the words of a string
+// and puts them in a string array.
+// The separators are spaces, tabs and newlines.
 func SplitWhiteSpaces(str string) []string {
 	size := 1
 	var result []string
