@@ -1,4 +1,4 @@
-package pisine
+package piscine
 
 func ConcatParams(args []string) string {
 	var strMass string
